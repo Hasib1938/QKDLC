@@ -62,7 +62,7 @@ QKDLC/
 ├── FPGA/
     ├──source                 # Verilog modules (Lorenz chaos, AXI-stream interface)               
     ├──sim_1/
-       ├── new/               # Simulation testbench for indivial module
+       ├── new/               # Simulation testbench for individual module
     ├──sim_1/
        ├── new/               # Simulation testbench for complete encryption-decryption             
 ├── QKD/
