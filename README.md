@@ -85,9 +85,9 @@ QKDLC/
 
 ## 👥 Contributors
 
-- **Hasibur Rahman** (KUET)
-- **Parthiv Debnath**, **Md. Nafis Jawad** (NSU)
-- **Raiyan Rahman** (NSU)
+- **Hasibur Rahman** 
+- **Parthiv Debnath**, **Md. Nafis Jawad** 
+- **Raiyan Rahman** 
 - **M.R.C. Mahdy** (North South University) – *Corresponding author*
 
 📫 Contact: `mahdy.chowdhury@northsouth.edu`
