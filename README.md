@@ -1,7 +1,106 @@
-# QKDLC
+# 🔐 QKDLC: FPGA-based Lorenz Chaos and Quantum Key Distribution for Image Encryption
 
 This repository contains the official implementation of the research paper:
 
-“FPGA Implementation of Lorenz Chaos based QKD-Chaotic RGB Image Encryption for High-Performance Cryptosystem”
-📄Authors: Hasibur Rahman, Parthiv Debnath, Md. Nafis Jawad, Raiyan Rahman, Mahdy Rahman Chowdhury
+> **FPGA Implementation of Lorenz Chaos-based QKD-Chaotic RGB Image Encryption for High-Performance Cryptosystem**
 
+📄 **Authors**:  
+Hasibur Rahman, Parthiv Debnath, Md. Nafis Jawad, Raiyan Rahman, M.R.C. Mahdy  
+🧠 *Affiliations: KUET, North South University, Mahdy Research Academy*
+
+---
+
+## 🧠 Overview
+
+This work proposes a **hybrid image encryption scheme** that combines:
+- **Quantum Key Distribution (QKD)** via the E91 protocol
+- **Lorenz chaos-based encryption** implemented on FPGA
+
+🔒 The system:
+- Uses QKD to generate secure initial keys
+- Perturbs Lorenz system parameters with QKD keys
+- Encrypts image pixels in real-time at the **physical layer** using **FPGA**
+- Achieves post-quantum security by resisting both classical and quantum attacks
+
+---
+
+## 📦 Dataset
+
+- Uses 512×512 RGB bitmap images as input
+- Initial QKD keys are simulated via Qiskit (E91 protocol)
+- Encrypted and decrypted image samples are saved as BMP files
+
+---
+
+## 📊 Visualizations
+
+- Lorenz attractor trajectories (Python)
+- Encrypted/decrypted image comparisons
+- Histogram & correlation analysis before and after encryption
+
+| Original | Encrypted | Decrypted |
+|----------|-----------|-----------|
+| ✅ RGB Image | 🔐 Encrypted Output | 🔓 Restored Image |
+
+---
+
+## ✨ Features
+
+- QKD simulation using Qiskit (E91 protocol)
+- Lorenz chaos-based 3D key generation (X, Y, Z components)
+- AXI-stream DMA pipeline for real-time image streaming on Zynq FPGA
+- Encryption/decryption via XOR with chaotic keys
+- FPGA testbench simulation (Verilog/Vivado)
+- High entropy, low correlation, and strong NPCR/UACI security metrics
+
+---
+
+## 📁 Folder Structure
+
+```
+QKDLC/
+├── verilog_src/                # Verilog modules (Lorenz chaos, AXI-stream interface)
+├── testbench/                 # Simulation testbenches
+├── images/                    # Input/output image files
+├── python_simulation/         # Python chaos simulations (Lorenz attractor)
+├── qiskit_qkd/                # QKD key simulation using Qiskit
+├── docs/                      # Paper, figures, and diagrams
+└── README.md
+```
+
+---
+
+## 📈 Results
+
+| Metric        | Value         |
+|---------------|---------------|
+| **Entropy**   | ~7.9993 bits/px |
+| **NPCR**      | ~99.62%       |
+| **UACI**      | 30–32%        |
+| **Correlation** | Near zero for encrypted |
+| **Speed**     | Real-time (AXI-stream) |
+| **Platform**  | Zynq-7000 FPGA |
+
+---
+
+## 👥 Contributors
+
+- **Hasibur Rahman** (KUET)
+- **Parthiv Debnath**, **Md. Nafis Jawad** (NSU)
+- **Raiyan Rahman** (NSU)
+- **M.R.C. Mahdy** (North South University) – *Corresponding author*
+
+📫 Contact: `mahdy.chowdhury@northsouth.edu`
+
+---
+
+## 📜 License
+
+MIT License  
+Feel free to use, modify, and distribute with attribution.
+
+---
+
+## 📬 Contact
+
+For collaboration, support, or feedback, reach out via email or open an issue.
