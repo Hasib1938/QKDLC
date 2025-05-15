@@ -2,7 +2,8 @@
 
 This repository contains the official implementation of the research paper:
 
-> **FPGA Implementation of Lorenz Chaos-based QKD-Chaotic RGB Image Encryption for High-Performance Cryptosystem**
+> **Quantum-Enhanced Chaotic Encryption on FPGA: A
+Path to Physical-Layer Post-Quantum Security**
 
 📄 **Authors**:  
 Hasibur Rahman, Parthiv Debnath, Md. Nafis Jawad, Raiyan Rahman, M.R.C. Mahdy  
