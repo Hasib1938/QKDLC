@@ -61,7 +61,7 @@ This work proposes a **hybrid image encryption scheme** that combines:
 ```
 QKDLC/
 ├── FPGA/
-    ├──source                 # Verilog modules (Lorenz chaos, AXI-stream interface)               
+    ├──source                 # Verilog modules and discrete chaos verification(discretized equation,Lorenz chaos, AXI-stream interface)               
     ├──sim_1/
        ├── new/               # Simulation testbench for individual module
     ├──sim_1/
